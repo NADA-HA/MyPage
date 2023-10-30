@@ -1,0 +1,156 @@
+
+
+body{
+    background-color: rgb(24, 63, 34);
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+    
+    
+}
+.swing{
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float: left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img{
+    border: 5px solid #70a083;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #508063;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -15px; left: 52%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+@keyframes swing {
+    0% { transform: rotate(3deg);}
+    100%{ transform: rotate(-3deg);}    
+}
+
+/*the end of swing img*/
+
+
+
+.account-info {
+    display: flex;
+    align-items: center;
+}
+.account-image {
+    margin-right: 10px; 
+}
+/* linkedin photo*/
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-box {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*the white boxes*/
+
+
+
+ul{
+    color: #1e6133; 
+ 
+}
+
+p{
+    color: #1e6133;
+}
+/*color of text inside boxes*/
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220; 
+  }
+
+
+h1 , h2 , h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px #619475;
+    font-style: italic;
+    color: rgb(144, 213, 198);
+    padding: 0px;
+}
+
+/*space li*/
+
+        
+.container {
+    flex-direction: column;
+  }
+
+.leftt{
+    padding-left: 5%;
+}
+
+li {
+    text-align: start;
+}
+
+
+/*Certificates css*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    background-color: #96cdba;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(93, 154, 197, 0.5); /*shadow */
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+
+}
+
+.column img {
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.2s;
+}
+
+.column:hover img {
+    transform: scale(1.05); 
+}
+
+
+
+  
